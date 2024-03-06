@@ -73,10 +73,10 @@ def right3():
 @bot.message_handler(['text'], func=right3())
 def lok3(message):
     if message == info[s]['Кнопки'][0]:
-        bot.send_photo('lok 3.2.png')
+        bot.send_photo('lok 3.1.png')
         bot.send_message(message.chat.id, info['3.1']['Ответы'][0])
     else:
-        bot.send_photo('lok 3.1.png')
+        bot.send_photo('lok 3.2.png')
         bot.send_message(message.chat.id, info['3.2']['Ответы'][1])
 
 bot.polling()
